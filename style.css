@@ -1,0 +1,124 @@
+/* General Styles */
+body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+   background-color: #121212; /* Dark background */
+   color: #ffffff; /* Light text */
+}
+
+h1, h2 {
+   color: #ffffff; /* Light text for headings */
+}
+
+p {
+   color: #b0b0b0; /* Slightly dimmed text for descriptions */
+}
+
+/* Slide Styles */
+.slide {
+   display: none;
+   text-align: center;
+   padding: 20px;
+}
+
+.slide.active {
+   display: block;
+}
+
+/* Buttons */
+button {
+   background-color: #1f1f1f; /* Dark button background */
+   color: #ffffff; /* Light text on buttons */
+   border: 1px solid #333333; /* Subtle border */
+   padding: 10px 20px;
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: 16px;
+   transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+   background-color: #333333; /* Slightly lighter on hover */
+}
+
+.start-btn {
+   margin-top: 20px;
+}
+
+.back-btn {
+   position: absolute;
+   top: 10px;
+   left: 10px;
+   background-color: transparent;
+   color: #ffffff;
+   font-size: 18px;
+   border: none;
+   cursor: pointer;
+}
+
+/* Mood Grid */
+.mood-grid {
+   display: flex;
+   gap: 50px;
+   justify-content: center;
+   margin-top: 20px;
+}
+
+.mood-btn {
+   background-color: #1f1f1f;
+   border: none;
+   border-radius: 10px;
+   padding: 10px;
+   cursor: pointer;
+   height: 300px;
+   width: 300px;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mood-btn img {
+   width: 100%;
+   border-radius: 10px;
+   object-fit: fill;
+}
+.show_head{
+   font-size: 2rem;
+   font-weight: bolder;
+   font-family: cursive;
+}
+.mood-btn:hover {
+   transform: scale(1.1);
+   box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+.show{
+   font-size: 1.5rem;
+   font-weight: bolder;
+
+}
+/* Playlist */
+#playlist-title {
+   margin: 20px 0;
+}
+
+.song-list {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 15px;
+}
+
+.song-list .song {
+   background-color: #1f1f1f;
+   padding: 10px 15px;
+   border-radius: 5px;
+   width: 80%;
+   color: #ffffff;
+   text-align: left;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.song-list .song:hover {
+   background-color: #333333;
+}
+
+
